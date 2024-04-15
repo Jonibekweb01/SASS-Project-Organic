@@ -1,0 +1,146 @@
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info__location {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 15.3px;
+  font-size: 15px;
+
+  &:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+.img__location {
+  margin-right: 7px;
+}
+
+.socialInfo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.socialInfo > span {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.socialInfo__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socialInfo__item svg {
+  width: 22px;
+  height: 22px;
+}
+
+.socialInfo__item svg > path {
+  cursor: pointer;
+  transition: 0.2s ease;
+  &:hover {
+    fill: #76a713;
+  }
+}
+.material-symbols-outlined {
+  color: #76a713;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.header__border {
+  width: 100%;
+  height: 1px;
+  display: block;
+  border: 1px solid #eeeeee;
+}
+
+.header__below {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  & .menu__item {
+    & .menu__link {
+      display: flex;
+      align-items: center;
+      font-family: sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19px;
+      color: #000 !important;
+      text-decoration: none;
+      transition: 0.2s ease;
+
+      & span {
+        font-size: 20px;
+        color: #000;
+        transition: 0.2s ease;
+      }
+      &:hover {
+        color: #76a713 !important;
+      }
+      &:hover span {
+        color: #76a713 !important;
+      }
+    }
+  }
+}
+
+.menu__link:hover {
+  color: #76a713;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.header__further {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__login {
+  padding: 10px 30px;
+  background-color: #76a713;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.header__shop {
+  background-color: #eeeeee;
+  padding: 6px 10px;
+}

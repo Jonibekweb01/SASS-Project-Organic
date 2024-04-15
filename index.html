@@ -9,9 +9,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Organic</title>
   </head>
   <body>
+    <!-- header-section -->
     <header class="header">
       <div class="header__inner">
         <div class="container">
@@ -151,17 +156,127 @@
             <div class="header__further">
               <button class="header__login">Login</button>
               <span class="header__shop"
-                ><span class="material-symbols-outlined"> search </span></span
-              >
-              <span class="header__shop"
-                ><span class="material-symbols-outlined">
-                  shopping_cart
-                </span></span
-              >
+                ><span class="material-symbols-outlined"> search </span>
+              </span>
+              <span class="header__shop">
+                <span class="material-symbols-outlined"> shopping_cart </span>
+              </span>
             </div>
           </div>
         </div>
       </div>
     </header>
+    <!-- header-section -->
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__box">
+                    <h2 class="hero__title2">body needs</h2>
+                    <h1 class="hero__title">organic food good health</h1>
+                    <button class="hero__btn">SHOP NOW</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__box">
+                    <h2 class="hero__title2">body needs</h2>
+                    <h1 class="hero__title">Goodness In Harmony</h1>
+                    <button class="hero__btn">SHOP NOW</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__box">
+                    <h2 class="hero__title2">body needs</h2>
+                    <h1 class="hero__title">Differences of a taste</h1>
+                    <button class="hero__btn">SHOP NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-btns">
+                <svg
+                  class="swiper-button-next"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="40" height="40" stroke="#76A713" />
+                  <path
+                    d="M12.6464 19.6464C12.4512 19.8417 12.4512 20.1583 12.6464 20.3536L15.8284 23.5355C16.0237 23.7308 16.3403 23.7308 16.5355 23.5355C16.7308 23.3403 16.7308 23.0237 16.5355 22.8284L13.7071 20L16.5355 17.1716C16.7308 16.9763 16.7308 16.6597 16.5355 16.4645C16.3403 16.2692 16.0237 16.2692 15.8284 16.4645L12.6464 19.6464ZM28 19.5L13 19.5V20.5L28 20.5V19.5Z"
+                    fill="black"
+                  />
+                </svg>
+
+                <!-- <div class="swiper-button-prev"></div> -->
+                <svg
+                  class="swiper-button-prev"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="39.5"
+                    y="39.5"
+                    width="39"
+                    height="39"
+                    transform="rotate(-180 39.5 39.5)"
+                    stroke="#76A713"
+                  />
+                  <path
+                    d="M27.3536 20.3536C27.5488 20.1583 27.5488 19.8417 27.3536 19.6464L24.1716 16.4645C23.9763 16.2692 23.6597 16.2692 23.4645 16.4645C23.2692 16.6597 23.2692 16.9763 23.4645 17.1716L26.2929 20L23.4645 22.8284C23.2692 23.0237 23.2692 23.3403 23.4645 23.5355C23.6597 23.7308 23.9763 23.7308 24.1716 23.5355L27.3536 20.3536ZM12 20.5H27V19.5H12V20.5Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="process">
+              <ul class="process__list">
+                <li class="process__item">
+                  <div class="process__info">
+                    <h3 class="process__title">Free Shipping</h3>
+                    <p class="process__text">On all orders over $35.00</p>
+                  </div>
+                </li>
+                <li class="process__item">
+                  <div class="process__info">
+                    <h3 class="process__title">15 day returns</h3>
+                    <p class="process__text">Moneyback guarantee</p>
+                  </div>
+                </li>
+                <li class="process__item">
+                  <div class="process__info">
+                    <h3 class="process__title">Fresh product</h3>
+                    <p class="process__text">Best online organic food</p>
+                  </div>
+                </li>
+                <li class="process__item">
+                  <div class="process__info">
+                    <h3 class="process__title">Summer offer</h3>
+                    <p class="process__text">On all orders over</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        rewind: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

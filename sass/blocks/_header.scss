@@ -125,9 +125,9 @@
 }
 
 .header__further {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header__login {
@@ -138,9 +138,30 @@
   color: #fff;
   border: none;
   outline: none;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #fff;
+    color: #76a713;
+    border: 1px solid;
+  }
 }
 
 .header__shop {
   background-color: #eeeeee;
   padding: 6px 10px;
+  transition: 0.2s ease;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #76a713;
+  }
+
+  &:hover span {
+    color: #fff;
+  }
 }
